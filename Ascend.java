@@ -2,9 +2,10 @@
 // and prints them in increasing order.
 public class Ascend {
 	public static void main(String[] args) {
-		int a = (int)Math.random();
-		int b = (int)Math.random();
-		int c = (int)Math.random();
+		int range = Integer.parseInt(args[0]);
+		int a = (int)(range*Math.random());
+		int b = (int)(range*Math.random());
+		int c = (int)(range*Math.random());
 		int check1 = Math.min(a, b);
 		int check2 = Math.min(a,c);
 		int check3 = Math.min(check1, check2);
@@ -14,7 +15,5 @@ public class Ascend {
 		check5 = Math.max(c, check5);
 		System.out.println(a+ ", "+b+", "+c);
 		System.out.println(check3+ ", "+check4+", "+check5);
-
-
 	}
 }
