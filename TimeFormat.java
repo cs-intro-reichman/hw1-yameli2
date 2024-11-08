@@ -27,7 +27,6 @@ public class TimeFormat {
 		{
 		x=hours-12;
 		System.out.print(x+":"+minutes+" PM");
-		System.out.print(hours+":"+minutes);
 		}
 	}
 }
